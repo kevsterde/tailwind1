@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawTrain</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
+<style type="text/tailwindcss">
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @layer utilities {
+
+        body {
+            font-family: 'Poppins', sans-serif;;
+        }
+      .wrapper {
+        @apply md:container mx-auto relative;
+      }
+      .spacer{
+        @apply px-3;
+      }
+
+      .page_nav ul{
+        @apply absolute top-[-80px] left-0 right-0;
+      }
+      .page_nav ul li{
+        @apply inline-block;
+      }
+      .page_nav ul li a{
+        @apply mx-4 text-white hover:underline; 
+      }
+      .page_nav ul li.active a{
+        @apply underline; 
+      }
+
+      .btn_style{
+        @apply bg-emerald-900 px-5 py-3 block w-fit mt-6 rounded-[150px] hover:bg-yellow-900;
+      }
+
+    .btm1_boxes section {
+        @apply border-2 p-4 w-[31%] rounded-2xl relative pb-[100px];
+    }
+    .btm1_boxes section h2{
+        @apply text-2xl mb-5;
+    }
+    .btm1_boxes section h2 span{
+        @apply block;
+    }
+    .btm1_boxes section a{
+        @apply text-xl border-2 px-5 py-3 block w-fit mt-6 rounded-[150px] hover:bg-yellow-900 absolute bottom-6 left-0 right-0 mx-auto;
+    }
+
+
+    }
+  </style>
+</head>
+<body>
+
+    <header class="spacer bg-emerald-700">
+        <div class="wrapper">
+            <div class="header_con py-5 flex justify-between items-center">
+                <div class="main_logo max-w-[100px]">
+                    <a href="">
+                        <figure><img class="rounded-md" src="images/main-logo.png" alt="PawTrain Logo"></figure>
+                    </a>
+                </div>
+
+                <div class="header_info">
+                    <a href="" class="rounded-[150px] border-2 border-solid border-white py-3 px-4 text-white hover:bg-sky-700">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="nav_area" class="spacer">
+        <div class="page_nav text-center">
+                <div class="wrapper">
+                <ul>
+                    <li class="active"><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Training</a></li>
+                    <li><a href="">Testimonial</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="banner" class="spacer bg-emerald-700">
+        <div class="wrapper">
+            <div class="bnr_con flex flex-row-reverse justify-between items-center py-10">
+                <div class="bnr_img max-w-[600px] aspect-square relative ">
+                    <figure class="max-w-[25%] aspect-square absolute  top-[3%] left-[3%]  border-[10px] rounded-[50%]  border-emerald-700/100"><img class="h-full object-cover rounded-[50%]" src="images/bnr1.png" alt="dog"></figure>
+                    <figure class="h-full"><img class=" h-full object-cover rounded-[50%] shadow-xl" src="images/bnr-img.jpg" alt="dog"></figure>
+                   
+                    <figure class="max-w-[25%] aspect-square absolute  bottom-[3%] right-[3%]  border-[10px] rounded-[50%]  border-emerald-700/100"><img class="h-full object-cover rounded-[50%]" src="images/bnr2.png" alt="dog"></figure>
+                </div>
+                <div class="bnr_info max-w-[40%] text-white" >
+                    <h2 class="text-6xl mb-4 font-bold">Unleash Your Dog's Potential <span> with Positive Training!</span></h2>
+                    <p>Welcome to a world of effective and positive dog training methods.</p>
+                    <a href="" class="btn_style">Start Training Today</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main_area" class="spacer bg-yellow-900">
+        <div class="wrapper">
+            <div class="main_con flex py-[100px] items-center justify-between gap-5 flex-row-reverse">
+                <main class="w-[50%] text-white">
+                    <h1 class="text-6xl mb-6 font-bold"><small class="text-xl block font-normal">Welcome </small> PawTrain</h1>
+                    <p> Where we believe that every dog has the potential to be a well-behaved and happy member of your family. Our passion for dogs and dedication to positive training methods have brought us together to create a valuable resource for dog owners like you. With our expertise, customized training programs, and commitment to positive reinforcement, we are here to help you build a stronger bond with your furry companion. From basic obedience to addressing behavioral challenges, our comprehensive resources and supportive community will guide you every step of the way. Get ready to unleash your dog's potential and embark on a rewarding training journey with us!</p>
+                </main>
+                <aside class="sidebar">
+                    <figure><img class="rounded-[100px]" src="images/main-img.png" alt="dog"></figure>
+                </aside>
+
+            </div>
+        </div>
+    </div>
+    <div id="bottom1" class="spacer bg-emerald-700">
+        <div class="wrapper">
+            <div class="btm1_con py-[100px] text-white text-center">
+                <div class="btm1_info mb-20 max-w-4xl mx-auto">
+
+                    <h2 class="text-6xl mb-6 font-bold">Services We Offer</h2>
+                    <p>With our range of services, we are committed to helping you develop a strong, positive relationship with your dog and addressing any training or behavior concerns you may have. Our experienced trainers, effective techniques, and personalized approach will support you in achieving your training goals and ensuring a happy and well-adjusted companion.</p>
+                </div>
+
+                <div class="btm1_boxes flex justify-between gap-5">
+                    <section class="box1">
+                        <h2>Obedience <span>Training</span></h2>
+                        <p> Our obedience training service focuses on teaching your dog essential commands such as sit, stay, come, and heel.</p>
+                        <a href="javascript:;">Learn More</a>
+                    </section>
+                    <section class="box2">
+                        <h2>Behavior <span>Modification</span></h2>
+                        <p>Address and rectify common behavioral issues like barking, anxiety, aggression, and leash pulling with our behavior modification service.</p>
+                        <a href="javascript:;">Learn More</a>
+                    </section>
+                    <section class="box3">
+                        <h2>Puppy <span>Socialization</span></h2>
+                        <p>Proper socialization is crucial for puppies to develop into well-adjusted and confident dogs. </p>
+                        <a href="javascript:;">Learn More</a>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="bottom2" class="spacer">
+        <div class="wrapper">
+            <div class="btm2_con">
+                <figure class="btm2_img"><img src="images/main-logo.png" alt=""></figure>
+                <div class="btm2_info">
+                    <h2>Mission Statement</h2>
+                    <p>Our mission is to empower dog owners, promote positive training methods, and help dogs reach their full potential for happy, well-behaved lives within their families.</p>
+                    <a href="javascipt:;" class="btn_style">About Us</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div id="bottom3" class="spacer">
+        <div class="wrapper">
+            <div class="btm3_con">
+                <div class="btm3_info">
+                    <h2></h2>
+                    <p></p>
+                </div>
+
+                <div class="testimonial">
+                    <section>
+                        <div class="info">
+                            <p></p>
+                            <h2></h2>
+                        </div>
+                        <div class="image_holder">
+                            <figure><img src="" alt=""></figure>
+                        </div>
+                    </section>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div id="bottom4" class="spacer">
+        <div class="wrapper">
+            <div class="btm4_con">
+                <div class="btm4_info">
+                    <h2>Come. Plan. Train</h2>
+                    <p></p>
+                    <a href="">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="spacer">
+        <div class="footer_top">
+            <div class="wrapper">
+                <div class="ftr_top_con">
+                    <div class="contact_info">
+                        <h2></h2>
+                        <h3 class="phone"></h3>
+                        <address></address>
+                        <a href="mailto:sample@gmail.com">sample@gmail.com</a>
+                    </div>
+
+                    <div class="footer_logo">
+                        <a href="">
+                            <figure><img src="" alt="PawTrain Logo"></figure>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer_btm">
+            <div class="wrapper">
+                <div class="ftr_btm_con">
+                    <div class="footer_nav">
+                        <div class="ul">
+                            <li class="active"><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Service</a></li>
+                            <li><a href="">Training</a></li>
+                            <li><a href="">Testimonial</a></li>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        All Right reserved &copy; PawTrain 2021
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>
