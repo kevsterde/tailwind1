@@ -1,2 +1,2 @@
-# tailwind1
-PawTrain | Tailwind Practice
+# PawTrain | Tailwind Practice
+
